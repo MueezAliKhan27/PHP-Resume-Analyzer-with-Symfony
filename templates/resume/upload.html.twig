@@ -1,5 +1,17 @@
-<h1>Upload Resume</h1>
-<form method="POST" enctype="multipart/form-data">
-    <input type="file" name="resume" accept=".pdf,.docx" required>
-    <button type="submit">Upload & Analyze</button>
-</form>
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+{% endblock %}
+
+<div class="resume-upload-container">
+    <h1>📄 Upload Your Resume</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label for="resume">
+            <span>Click or Drag & Drop your resume here</span>
+            <input id="resume" type="file" name="resume" accept=".pdf,.docx" required>
+        </label>
+
+        <button type="submit">🚀 Upload & Analyze</button>
+    </form>
+</div>
+    
