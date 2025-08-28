@@ -1,0 +1,13 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+upload:
+  path: /
+  controller: App\Controller\ResumeController::upload
+
+result:
+  path: /result
+  controller: App\Controller\ResumeController::result    
